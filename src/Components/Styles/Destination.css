@@ -1,0 +1,61 @@
+
+.destiny-links p:hover {
+  color: rgba(255, 255, 255);
+
+}
+
+
+.destiny-links p {
+    letter-spacing: 4px;
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.active-sub  p {
+  color: #ffffff;
+  border-bottom: solid 1px #fff;
+}
+
+.title h4{
+    font-weight: 200;
+    letter-spacing: 4px;
+
+}
+.list-order h4 {
+    font-weight: 600;
+
+}
+.title {
+    grid-area: titl;
+    text-transform: uppercase;
+    color: #fff;
+    display: flex;
+    gap: 1rem;
+}
+
+.destination-nav {
+    grid-area: navi;
+    height: max-content;
+}
+
+.destination-image {
+    grid-area: img;
+}
+.destiny-links {
+    display: flex;
+    gap: 2rem;
+    list-style-type: none;
+    /* list-style-position: inside; */
+}
+
+.destination-info {
+    grid-area: inf;
+
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-areas: "pla abou";
+}

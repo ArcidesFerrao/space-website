@@ -1,0 +1,81 @@
+.tech-nav {
+    grid-area: sel;
+}
+
+.detail-tech  p{
+    line-height: 1.5;
+    color: var(--accent-color);
+
+}
+ 
+.detail-tech {
+
+
+    grid-area: inf;
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.tech-image img {
+    width: 515px;
+    height: 100%;
+    /* transform: translateX(200px); */
+}
+.tech-image {
+    grid-area: imag;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.tech-links {
+    position: fixed;
+    margin: 0;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    list-style: none;
+}
+
+.tech-links li h4 {
+    font-weight: 400;
+}
+
+.tech-links li:hover {
+    background-color: #fff;
+    color: var(--background-color);
+}
+
+.tech-links li {
+    transition: all 500ms ease-in;
+    font-family: "Bellefair";
+    line-height: 1;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 1rem; */
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    border: solid 1px var(--accent-border) ;
+    color: var(--accent-color);
+    
+}
+
+.tech-sub-title p {
+    letter-spacing: 2px;
+}
+.tech-name h3 {
+    font-family: "Bellefair";
+    text-transform: uppercase;
+    color: #fff;
+
+}
+

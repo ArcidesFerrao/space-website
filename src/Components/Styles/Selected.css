@@ -1,0 +1,45 @@
+.image-selected {
+    grid-area: pla;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.image-selected img {
+    /* display: inline-block; */
+    /* width: 100%; */
+    /* height: 100%; */
+}
+.info-selected {
+    grid-area: abou;
+
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    align-items: flex-start;
+    gap: 2rem;
+}
+.title-info h2 {
+    text-transform: uppercase;
+    font-family: "Bellefair";
+    color: #fff;
+  line-height: 1;
+    padding-top: 2rem;
+}
+
+.detail {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-top: solid 1px var(--accent-border);
+    padding: 1rem 0;
+
+}
+.detail h5 {
+    font-family: "Bellefair";
+    text-transform: uppercase;
+}
+.detail h6 {
+    font-weight: 400;
+    color: var(--accent-color);
+}

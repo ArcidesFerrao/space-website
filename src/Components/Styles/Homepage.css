@@ -1,0 +1,50 @@
+.homepage {
+    
+    grid-template-columns: 40% 25% 35%;
+    grid-template-areas: "int gap btn";
+  }
+  
+  
+  .intro-container {
+    grid-area: int;
+  
+    align-self: flex-end;
+    padding: 60px 0;
+  }
+  
+  .gap-container {
+    grid-area: gap;
+  
+    display: block;
+  }
+  
+  .button-explore {
+    grid-area: btn;
+    height: 370px;
+    width: 370px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: end;
+  }
+  
+  .button-explore button {
+    height: 60%;
+    width: 60%;
+    border-radius: 50%;
+    color: var(--background-color);
+    background-color: var(--hover-color);
+    text-transform: uppercase;
+    font-family: "Bellefair", serif;
+    font-weight: 400;
+    border: none;
+  }
+  .button-explore button:hover {
+    cursor: pointer;
+  }
+  .button-explore:hover {
+    background-color: hsla(0, 0%, 100%, 0.1);
+    cursor: pointer;
+  }
+  
