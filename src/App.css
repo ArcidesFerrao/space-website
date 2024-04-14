@@ -28,7 +28,7 @@
   backdrop-filter: blur(40px);
 }
 
-nav {
+.home-nav {
   margin-top: 60px;
   display: flex;
   position: absolute;
@@ -123,6 +123,19 @@ ol {
   align-content: end;
 }
 
+.grid-container-crew {
+  display: grid;
+  grid-template-areas: "titl imag" 
+    "inf imag"
+    "sel imag"
+    ;
+  grid-template-columns: auto 570px; 
+  grid-auto-rows: auto;
+  row-gap: 2rem;
+  column-gap: 2rem;
+}
+
+
 .grid-container-tech {
   display: grid;
   grid-template-areas: "titl titl ." 
@@ -134,6 +147,9 @@ ol {
   /* align-content: end; */
 }
 
+.page-pad-crew {
+  padding: 100px 140px;
+}
 .page-pad {
   padding: 100px 0 140px 140px;
   /* height: 80vh; */

@@ -1,0 +1,72 @@
+.title {
+    grid-area: titl;
+}
+
+.ti {
+    font-weight: 200;
+    letter-spacing: 2px;
+}
+
+.order {
+    color: rgba(255, 255, 255, 0.25);
+    font-weight: 600;
+}
+
+
+.select-member:hover {
+    background-color: #fff;
+    
+}
+
+    .select-member {
+    display: block;
+    background-color: rgba(255, 255, 255, 0.25);
+    width: 1.2em;
+    height: 1.2em;
+    border-radius: 50%;
+    
+}
+
+
+.active-crew {
+
+    background-color: #ffffff;
+}
+
+
+.navi-crew {
+    grid-area: sel;
+    display: flex;
+    gap: 2rem;
+}
+
+.member-image img {
+    width: 570px;
+    /* height: 600px; */
+    
+}
+.member-image {
+    grid-area: imag;
+    
+    height: 600px;
+    object-fit: contain;
+
+}
+
+.crew-info {
+    grid-area: inf;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.crew-info h4, 
+.crew-info h3 {
+    font-family: "Bellefair";
+    text-transform: uppercase;
+}
+
+.crew-info h3 {
+    color: #fff;
+}

@@ -2,26 +2,21 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import data from "../assets/data.json";
 import "./Styles/Selected.css";
-import marspic from "./assets/destination/image-mars.png";
+
 
 export default function Selected() {
   const [currentData, setCurrentData] = useState(null);
-  const [urlImage, setUrlImage] = useState(null);
-
   const dataObj = data.destinations;
-  const { id } = useParams();
+  const { id = "Moon" } = useParams();
 
   useEffect(() => {
-    // const dataObj = data.destinations.find(({ name }) => name === id )
+    console.log(id);
     setCurrentData(dataObj.find(({ name }) => name === id));
-    // setUrlImage("/src/Components/" + currentData.images.png);
-    // console.log(currentData.images.webp);
   }, [id]);
 
   return (
     <>
       <div className="image-selected">
-        {/* <img src={marspic} alt="" /> */}
         <img
           src={currentData && "/src/Components/" + currentData.images.png}
           alt=""

@@ -31,7 +31,7 @@ function App() {
 
   return (
     <>
-      <nav>
+      <nav className="home-nav" >
         <div className="icon-home">
           <img src={logo} alt="" />
         </div>
@@ -39,7 +39,7 @@ function App() {
         <div className="midbar"></div>
 
         <div className="links-container">
-          <ol className="nav-links">
+          <ol start="0" className="nav-links">
             <NavLink
               to="/"
               onClick={navHome}

@@ -5,13 +5,11 @@ import data from "../assets/data.json";
 
 export default function Technology() {
   const [currentData, setCurrentData] = useState(null);
-  // const [urlImage, setUrlImage] = useState(null);
   const dataObj = data.technology;
 
   const handleClick = (ex) => {
     setCurrentData(dataObj.find(({ name }) => name === ex));
     console.log(currentData);
-    // console.log(e.target.value);
   }
 
   useEffect(() => {
@@ -28,7 +26,6 @@ export default function Technology() {
       <div className="tech-nav">
         <ul className="tech-links">
           <NavLink
-            // to={"/destination/" + "Moon"}
             onClick={() => handleClick("Launch vehicle")}
             key="1"
             className={({ isActive }) => {
@@ -40,7 +37,6 @@ export default function Technology() {
             </li>
           </NavLink>
           <NavLink
-            // to={"/destination/" + "Mars"}
             onClick={() => handleClick("Spaceport")}
             key="2"
             className={({ isActive }) => {
@@ -52,7 +48,6 @@ export default function Technology() {
             </li>
           </NavLink>
           <NavLink
-            // to={"/destination/" + "Europa"}
             onClick={() => handleClick("Space capsule")}
             key="3"
             className={({ isActive }) => {
