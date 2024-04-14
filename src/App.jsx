@@ -1,3 +1,5 @@
+import react, { useEffect, useState } from "react";
+
 import "./App.css";
 import { Outlet } from "react-router-dom";
 import { NavLink } from "react-router-dom";
@@ -6,7 +8,6 @@ import crewBg from "./assets/crew/background-crew-desktop.jpg";
 import homeBg from "./assets/home/background-home-desktop.jpg";
 import technologyBg from "./assets/technology/background-technology-desktop.jpg";
 import destinationBg from "./assets/destination/background-destination-desktop.jpg";
-import { useEffect, useState } from "react";
 
 
 
