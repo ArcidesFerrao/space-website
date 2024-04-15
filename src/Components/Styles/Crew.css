@@ -70,3 +70,25 @@
 .crew-info h3 {
     color: #fff;
 }
+
+@media screen and (max-width: 1000px) {
+    .member-image img {
+        width: 450px !important;
+    }
+
+    .crew-info h3 {
+        font-size: 40px;
+    }
+    
+    .crew-info h4 {
+        font-size: 24px;
+    }
+
+    .crew-info{
+        align-items: center;
+    }
+
+    .navi-crew {
+        justify-content: center;
+    }
+}

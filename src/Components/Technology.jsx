@@ -9,7 +9,7 @@ export default function Technology() {
 
   const handleClick = (ex) => {
     setCurrentData(dataObj.find(({ name }) => name === ex));
-    console.log(currentData);
+    // console.log(currentData);
   }
 
   useEffect(() => {
@@ -75,7 +75,7 @@ export default function Technology() {
 
       <div className="tech-image">
         <img
-          src={currentData && "/src/Components/" + currentData.images.portrait}
+          src={currentData && "/space-website/src/Components/" + currentData.images.portrait}
           alt=""
         />
       </div>

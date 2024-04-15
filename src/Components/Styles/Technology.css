@@ -7,9 +7,8 @@
     color: var(--accent-color);
 
 }
- 
-.detail-tech {
 
+.detail-tech {
 
     grid-area: inf;
 
@@ -79,3 +78,25 @@
 
 }
 
+
+@media screen and (max-width: 1000px) {
+    .tech-image img {
+        width: 515px;
+        height: 100%;
+    }    
+
+   
+    .tech-nav {
+        height: max-content;
+    }
+
+    .tech-links {
+        position: relative;
+        
+        flex-direction: row;
+    }
+
+    .detail-tech { 
+        align-items: center;
+    }
+}

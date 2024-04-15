@@ -42,12 +42,13 @@ function App() {
         <div className="links-container">
           <ol start="0" className="nav-links">
             <NavLink
-              to="/"
+              to="/space-website/"
               onClick={navHome}
 
               className={({ isActive }) => {
                 return isActive ? "active navlink" : "navlink";
               }}
+              end
             >
               <li>
                 <p>Home</p>
@@ -55,7 +56,7 @@ function App() {
             </NavLink>
 
             <NavLink
-              to="/destination"
+              to="/space-website/destination"
               onClick={navDestination}
               className={({ isActive }) => {
                 return isActive ? "active navlink" : "navlink";
@@ -67,7 +68,7 @@ function App() {
             </NavLink>
 
             <NavLink
-              to="/Crew"
+              to="/space-website/Crew"
               onClick={navCrew}
               className={({ isActive }) => {
                 return isActive ? "active navlink" : "navlink";
@@ -79,7 +80,7 @@ function App() {
             </NavLink>
 
             <NavLink
-              to="/technology"
+              to="/space-website/technology"
               onClick={navTechnology}
               className={({ isActive }) => {
                 return isActive ? "active navlink" : "navlink";

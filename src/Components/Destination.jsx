@@ -13,7 +13,7 @@ export default function Destination() {
       <div className="destination-nav">
         <ul className="destiny-links">
           <NavLink
-            to={"/destination/" + "Moon"}
+            to={"/space-website/destination/" + "Moon"}
             key="moon"
             className={({ isActive }) => {
               return isActive ? "active-sub" : "";
@@ -24,7 +24,7 @@ export default function Destination() {
             </li>
           </NavLink>
           <NavLink
-            to={"/destination/" + "Mars"}
+            to={"/space-website/destination/" + "Mars"}
             key="mars"
             className={({ isActive }) => {
               return isActive ? "active-sub" : "";
@@ -33,7 +33,7 @@ export default function Destination() {
             <li><p>MARS</p></li>
           </NavLink>
           <NavLink
-            to={"/destination/" + "Europa"}
+            to={"/space-website/destination/" + "Europa"}
             key="europa"
             className={({ isActive }) => {
               return isActive ? "active-sub" : "";
@@ -44,7 +44,7 @@ export default function Destination() {
             </li>
           </NavLink>
           <NavLink
-            to={"/destination/" + "Titan"}
+            to={"/space-website/destination/" + "Titan"}
             key="titan"
             className={({ isActive }) => {
               return isActive ? "active-sub" : "";

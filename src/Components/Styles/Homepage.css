@@ -1,20 +1,44 @@
 .homepage {
+    display: grid;
     
-    grid-template-columns: 40% 25% 35%;
+    /* grid-template-columns: 40% 25% 35%; */
     grid-template-areas: "int gap btn";
-  }
+}
   
-  
+@media screen and (max-width: 1000px) {
+    
+    .homepage {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .intro-container {
+      align-self: center !important;
+      align-content: center !important ;
+    }
+
+    .button-explore {
+      display: flex;
+      justify-content: center !important ;
+      align-items: center !important ;
+      align-self: center !important ;
+    }
+
+}
+
+
   .intro-container {
     grid-area: int;
-  
+    width: 500px;
     align-self: flex-end;
     padding: 60px 0;
   }
   
   .gap-container {
     grid-area: gap;
-  
+    width: 4rem;
     display: block;
   }
   

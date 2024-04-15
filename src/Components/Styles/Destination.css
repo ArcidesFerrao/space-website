@@ -59,3 +59,18 @@
     grid-template-columns: 60% 40%;
     grid-template-areas: "pla abou";
 }
+
+@media screen and (max-width: 1000px) {
+    .destination-info {
+        grid-template-columns: none;
+        justify-content: center;
+        justify-items: center;
+        grid-template-areas: "pla"
+            "abou";
+    }
+
+    .destination-nav, .image-selected, .info-selected {
+        display: flex;
+        justify-content: center;
+    }
+}

@@ -10,7 +10,7 @@ export default function Selected() {
   const { id = "Moon" } = useParams();
 
   useEffect(() => {
-    console.log(id);
+    // console.log(id);
     setCurrentData(dataObj.find(({ name }) => name === id));
   }, [id]);
 
@@ -18,7 +18,7 @@ export default function Selected() {
     <>
       <div className="image-selected">
         <img
-          src={currentData && "/src/Components/" + currentData.images.png}
+          src={currentData && "/space-website/src/Components/" + currentData.images.png}
           alt=""
         />
       </div>

@@ -13,30 +13,30 @@ import "./index.css";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/space-website",
     element: <App />,
     errorElement: <ErrorPage />,
     children: [
       {
-        path: "/",
+        path: "/space-website/",
         element: <Homepage />,
       },
       {
-        path: "/destination",
+        path: "/space-website/destination",
         element: <Destination />,
         children: [
           {
-            path: "/destination/:id",
+            path: "/space-website/destination/:id",
             element: <Selected />,
           },
         ],
       },
       {
-        path: "/crew",
+        path: "/space-website/crew",
         element: <Crew />,
       },
       {
-        path: "/technology",
+        path: "/space-website/technology",
         element: <Technology />,
       },
     ],
