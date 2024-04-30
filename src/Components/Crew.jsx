@@ -32,7 +32,8 @@ export default function Crew() {
       </div>
 
       <div className="member-image">
-        <img src={currentData && "Components/" + currentData.images.webp} alt="" className="member" />
+        {/* <img src={currentData && "Components/" + currentData.images.webp} alt="" className="member" /> */}
+        <img src={currentData && "." + currentData.images.webp} alt="" className="member" />
       </div>
 
       <nav className='navi-crew' >

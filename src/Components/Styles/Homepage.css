@@ -4,6 +4,16 @@
     /* grid-template-columns: 40% 25% 35%; */
     grid-template-areas: "int gap btn";
 }
+@media screen and (max-width: 600px) { 
+
+  .intro-container {
+    width: 300px !important;
+  }
+
+  h1 {
+    font-size: 89px !important;
+  }
+}
   
 @media screen and (max-width: 1000px) {
     
